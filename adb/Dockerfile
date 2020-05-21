@@ -21,8 +21,7 @@ RUN apk --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/test
 
 COPY run.sh /
 RUN chmod a+x /run.sh
-RUN mkdir /root/.android
-
+RUN ln -s /config /root/.android
 #
 # Define an environment variable
 #
