@@ -14,8 +14,6 @@ MAINTAINER Kira Cat
 
 LABEL Description="This image will allow you to connect to android tablets using ADB Over WiFi"
 
-COPY connect.sh /opt
-
 #
 # First install software packages needed to compile rtl_433 and to publish MQTT events
 #
@@ -29,7 +27,7 @@ RUN apk --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/test
 ENV ADB_HOST="10.0.0.8"
 ENV ADB_PORT=5555
 
-COPY connect.sh /
-RUN chmod a+x /connect.sh
+COPY run.sh /
+RUN chmod a+x /run.sh
 
-CMD [ "/connect.sh" ]
+CMD [ "/run.sh" ]
