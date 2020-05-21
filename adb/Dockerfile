@@ -29,4 +29,7 @@ RUN apk --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/test
 ENV ADB_HOST="10.0.0.8"
 ENV ADB_PORT=5555
 
-CMD chmod +x /opt/connect.sh && /opt/connect.sh
+COPY connect.sh /
+RUN chmod a+x /connect.sh
+
+CMD [ "/connect.sh" ]
