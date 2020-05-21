@@ -1,9 +1,9 @@
 {
   "name": "ADB over TCP/IP",
   "version": "0.1",
-  "slug": "adb",
+  "slug": "ADBInterface",
   "description": "ADB over WiFi Interface for Home Assistant",
-  "url": "https://github.com/carlymarie/hassio-addons/tree/master/adb",
+  "url": "https://github.com/carlymarie/hassio-addons/tree/master/ADBInterface",
   "startup": "before",
   "boot": "auto",
   "map": ["config:rw", "ssl"],
