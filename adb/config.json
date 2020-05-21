@@ -9,6 +9,7 @@
     "map": ["config:rw", "ssl"],
     "host_network": true,
     "hassio_api": true,
+    "homeassistant_api": true,
     "arch": ["aarch64", "amd64", "armv7", "i386"],
     "options": {
         "adb_host": "10.0.0.8",
