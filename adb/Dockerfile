@@ -26,4 +26,4 @@ RUN apk --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/test
 # Use this variable when creating a container to specify the MQTT broker host.
 ENV ADB_HOST="10.0.0.8"
 ENV ADB_PORT=5555
-CMD adb connect ADB_HOST:ADB_PORT
+CMD cd / && cp /config/adb/connect.sh /connect.sh && chmod +x /connect.sh
