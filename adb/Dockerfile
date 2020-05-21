@@ -29,5 +29,7 @@ ENV ADB_PORT=5555
 
 COPY run.sh /
 RUN chmod a+x /run.sh
+RUN mkdir /root/.android
+RUN ls -s /config /root/.android
 
 CMD [ "/run.sh" ]
