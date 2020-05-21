@@ -19,9 +19,9 @@ LABEL Description="This image will allow you to connect to android tablets using
 #
 RUN apk --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ add android-tools
 
+COPY run.sh /
 RUN chmod a+x /run.sh
 RUN mkdir /root/.android
-RUN ls -s /config /root/.android
 
 #
 # Define an environment variable
@@ -29,8 +29,5 @@ RUN ls -s /config /root/.android
 # Use this variable when creating a container to specify the MQTT broker host.
 ENV ADB_HOST="10.0.0.8"
 ENV ADB_PORT=5555
-
-COPY run.sh /
-
 
 CMD [ "/run.sh" ]
