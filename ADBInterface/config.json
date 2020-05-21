@@ -3,7 +3,7 @@
   "version": "0.1",
   "slug": "ADBInterface",
   "description": "ADB over WiFi Interface for Home Assistant",
-  "url": "https://github.com/carlymarie/ADBInterface/tree/master",
+  "url": "https://github.com/carlymarie/hassio-addons/tree/master/ADBInterface",
   "startup": "before",
   "boot": "auto",
   "map": ["config:rw", "ssl"],
