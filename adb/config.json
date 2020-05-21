@@ -7,8 +7,6 @@
     "startup": "before",
     "boot": "auto",
     "map": ["config:rw", "ssl"],
-    "host_network": true,
-    "host_pid": true,
     "hassio_api": true,
     "arch": ["aarch64", "amd64", "armv7", "i386"],
     "options": {
